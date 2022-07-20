@@ -5,16 +5,17 @@ public:
         int high = nums.size() -1 ;
         int mid = high / 2;
         while(high - low >= 0){
+            mid = low+ (high - low)/2;
             if(nums[mid] == target){
                 return mid;
             }
             if(nums[mid] < target){
                 low = mid+1;
-                mid = low+ (high - low)/2;
+                
             }
             else if(target < nums[mid]){
                 high = mid-1;
-                mid = (high - low)/2;
+                //mid = (high - low)/2;
         }
         }
                return -1;
