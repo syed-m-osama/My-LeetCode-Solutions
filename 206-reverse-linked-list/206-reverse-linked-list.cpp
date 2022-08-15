@@ -26,7 +26,7 @@ public:
         //     stk.pop();
         // }
         // ptr->next = nullptr;
-        // return head;
+        // return head; naive
         ListNode* prev = nullptr; ListNode* curr; ListNode* next;
         curr = head;
         while(head != nullptr){
