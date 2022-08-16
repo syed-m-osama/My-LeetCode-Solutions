@@ -43,7 +43,7 @@ public:
                 ptr->next = list1;
                 ptr = ptr->next;
                 list1 = list1->next;
-                //ptr->next = nullptr;
+                ptr->next = nullptr;
             }
             // else if(list1->val == list2->val){
             //     ptr->next = list1;
@@ -58,7 +58,7 @@ public:
                 ptr->next = list2;
                 ptr = ptr->next;
                 list2 = list2->next;
-                //ptr->next = nullptr;
+                ptr->next = nullptr;
             }
         }
         if(list1 == nullptr){
