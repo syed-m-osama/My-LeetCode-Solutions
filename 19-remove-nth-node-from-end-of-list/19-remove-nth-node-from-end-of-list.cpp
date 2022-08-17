@@ -23,9 +23,6 @@ public:
         for(int i = 0; i< n;i++){
             curr = curr->next;
             if(curr == nullptr){
-                if(i == n-1){
-                    
-                }
                 break;
             }
         }
@@ -41,7 +38,7 @@ public:
         if(first == second){
             first = first->next;
             return first;
-        }
+        }///vvvicondition
     while(second->next != nullptr){
         first = first->next;
         second = second->next;
