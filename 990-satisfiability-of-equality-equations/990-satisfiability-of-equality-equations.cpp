@@ -7,7 +7,7 @@ public:
             return x;
         }
         else{
-           return find(parent[x]);
+           return parent[x] = find(parent[x]);
         }
     }
     
