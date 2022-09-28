@@ -38,7 +38,7 @@ public:
         if(first == second){
             first = first->next;
             return first;
-        }///vvvicondition
+        }///vvvicondition for skipping first element
     while(second->next != nullptr){
         first = first->next;
         second = second->next;
@@ -46,10 +46,6 @@ public:
     
     first->next = first->next->next;
     return head;
-        
-        
-        
-        
-        
+                
     }
 };
