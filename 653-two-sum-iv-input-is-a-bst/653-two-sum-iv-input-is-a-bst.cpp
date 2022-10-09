@@ -11,21 +11,20 @@
  */
 class Solution {
 public:
-    //unordered_set<int> us;
+    unordered_set<int> us;
     
     bool findTarget(TreeNode* root, int k) {
-        unordered_set<int> us;
-        return find(root, k, us);
+        return find(root, k);
     }
     
-    bool find(TreeNode* root, int k, unordered_set<int>& us){
-        if(root == nullptr) return false;
+    bool find(TreeNode* root, int k){
+        if(root == nullptr) return false; //silly mistake here
         int rem = k-root->val;
         if(us.find(rem) != us.end()){
             return true;
         }
         us.insert(root->val);
-        return find(root->left, k, us) || find(root->right, k, us);
+        return find(root->left, k) || find(root->right, k);
     }
 };
 
