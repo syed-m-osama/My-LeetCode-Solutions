@@ -13,3 +13,5 @@ public:
         
     }
 };
+
+//think out of the box: INT_MAX instead of INT_MIN 
