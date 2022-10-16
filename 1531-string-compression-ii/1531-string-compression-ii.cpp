@@ -1,4 +1,5 @@
 class Solution {
+    //discuss redo
     const static int N = 127;
 
     // dp[left][k] means the minimal coding size for substring 
