@@ -10,3 +10,5 @@ public:
         return alpha == '{'?true:false;
     }
 };
+
+//Simpler approach: check set size.
