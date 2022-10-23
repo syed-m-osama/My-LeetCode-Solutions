@@ -1,5 +1,5 @@
 class Solution {
-public:
+public:        
     vector<int> findErrorNums(vector<int>& nums) {
         int miss = 0;
         int repeat = 0;
