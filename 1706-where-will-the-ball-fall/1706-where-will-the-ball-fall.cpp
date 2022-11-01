@@ -28,34 +28,8 @@ public:
                     }
                     else{
                         finPos[j] = finPos[j] - 1;
-                    }
-                    
+                    }   
                 }
-                
-                
-            //     if(grid[i][finPos[j]] == -1){
-            //         if(j == 0) finPos[j] = -1;
-            //         else{
-            //             if(grid[i][finPos[j]-1] == 1){
-            //                 finPos[j] = -1;
-            //             }
-            //             else{
-            //                 finPos[j] = finPos[j]-1;
-            //             }
-            //         }
-            //     }
-            //     else if(grid[i][finPos[j]] == 1){
-            //         if(j == n-1) finPos[j] = -1;
-            //         else{
-            //             if(grid[i][finPos[j]+1] == -1){
-            //                 finPos[j] = -1;
-            //             }
-            //             else{
-            //                 finPos[j] = finPos[j]+1;
-            //             }
-            //         }
-            //     }
-            // }
             }
             for(auto i:finPos) cout<<i<<" ";
             cout<<endl;
